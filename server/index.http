@@ -1,0 +1,19 @@
+### get my internet ip
+
+GET http://localhost:8000/api/user/all
+
+### inspection http post
+# @name post
+PATCH http://localhost:8000/api/answer/post/6371e66321fce8b012d9a482
+Content-Type: application/json
+
+{
+    "answerBody": "kalyanborah456@gmail.com",
+    "userAnswered": "SlashDB",
+    "questionTags": ["java" ," node"],
+    "userId":"636fd684a401f7ceea7d1624"
+}
+
+### inspection http delete
+# @name delete
+DELETE http://localhost:8000/api/question/delete/6371f4111cf0f0bc9b1dfaa

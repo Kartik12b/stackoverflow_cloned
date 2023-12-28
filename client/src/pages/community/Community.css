@@ -1,0 +1,30 @@
+@media (min-width: 320px) {
+  .community-home-container {
+    margin-top: 3.2rem;
+    width: 100%;
+    position: relative;
+  }
+  .community-home-container h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 3.3rem;
+    border-radius: 0.2rem;
+    position: static;
+    background-color: #ff6347;
+    top: 5%;
+    align-items: center;
+  }
+  
+.community-posts {
+    margin: 2.3rem 0 0 0;
+    padding: 1.4rem;
+    border-radius: 0.3rem;
+  }
+}
+@media (min-width: 786px) {
+  .community-home-container {
+    margin-top: 1.2rem;
+    min-width: calc(100% - 264px);
+  }
+}

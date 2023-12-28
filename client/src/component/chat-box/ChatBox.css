@@ -1,0 +1,196 @@
+.chat-box-container {
+  top: 85%;
+  position: fixed;
+  z-index: 99;
+  right: 3%;
+  bottom: 5%;
+  display: grid;
+  border-radius: 0.8rem;
+}
+.chat-active {
+  position: fixed;
+  z-index: 99;
+  right: 3%;
+  display: grid;
+  border-radius: 0.4rem;
+  min-height: 60%;
+  bottom: 3%;
+  background-color: rgb(196, 187, 206);
+}
+.chat-box-content,
+.fa-circle-question {
+  font-size: 2.3rem;
+  color: #ef8236;
+  transition: 600ms;
+}
+.chat-box-content .fa-circle-question:hover {
+  transform: scale(1.5, 1.5);
+}
+.content-active {
+  display: none;
+}
+/* .ask-chat-box{
+
+
+} */
+.ask-question-active {
+  max-width: 21rem;
+  min-width: 20rem;
+  padding: 0.5rem;
+}
+.ask-chat-box-header {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  max-height: 7rem;
+}
+.ask-chat-box-header p {
+  font-size: 1.2rem;
+  margin: 0.6rem auto;
+  align-self: center;
+  text-align: center;
+}
+.ask-chat-box-header span {
+  font-size: small;
+  color: #3a3a3a;
+}
+.ask-chat-box-header .x-icon {
+  color: #3a3a3a;
+  margin: 0.2rem auto;
+  font-size: 1.6rem;
+}
+.x-icon .fa-circle-xmark:hover {
+  font-size: 1.8rem;
+  color: rgba(250, 235, 215, 0.56);
+  transition-delay: 160ms;
+}
+.ask-chat-area {
+  min-height: calc(21rem);
+  background-color: #e3e6e8;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+.ask-chat-area form {
+  width: 98%;
+  display: flex;
+  margin: 0.2rem auto;
+  justify-content: stretch;
+  align-items: center;
+}
+.ask-chat-area form input {
+  width: 18rem;
+  border: 0.3rem;
+  border-radius: 0.4rem;
+  min-height: 1.7rem;
+  margin: 0.2rem auto;
+}
+.ask-chat-area form .btn {
+  background-color: transparent;
+  border: none;
+}
+.ask-chat-area form .btn .fa-paper-plane {
+  color: aliceblue;
+}
+
+.chat-scroll {
+  background-color: #00003e;
+  border-radius: 0.3rem;
+}
+.chat-scroll .msg {
+  min-height: 20rem;
+  max-height: 20rem;
+  overflow-x: hidden;
+}
+.msg {
+  margin: 0 auto;
+  color: #e3e6e8;
+}
+.msg span i {
+  color: #ef8236;
+}
+.msg-data {
+  background-color: #2594da;
+  padding: 0.4rem;
+  margin: 0.5rem;
+  display: flex;
+  gap: 0.4rem;
+  font-size: small;
+  font-weight: 600;
+  border-radius: 0.8rem;
+}
+.data-bot {
+  margin-right: auto;
+  width: fit-content;
+}
+.data-user {
+  margin-left: auto;
+  width: fit-content;
+  justify-content: space-around;
+}
+.msg::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.msg::-webkit-scrollbar-button {
+  background-color: #9595b0;
+  display: none;
+}
+.msg::-webkit-scrollbar-thumb {
+  background-color: #565685;
+  border-radius: 0.2rem;
+}
+.suggestion {
+  display: flex;
+  justify-content: space-around;
+}
+.suggestion .suggest-btn {
+  font-size: 0.7rem;
+  background-color: #9595b0;
+  border-radius: 0.7rem;
+  border: none;
+  color: #e3e6e8;
+  font-family: "Berlin Sans FB", "sans-serif";
+  transition: 600ms;
+}
+.suggest-btn:hover {
+  transform: scale(1.5, 1.6);
+  background-color: #007ac6;
+}
+.suggest-btn:nth-child(2) {
+  color: rgba(246, 242, 245, 0.45);
+}
+.auth-container-chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.8rem;
+}
+.auth-container-chatbox form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.auth-container-chatbox form label {
+  width: 100%;
+  color: #d7d7de;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.auth-container-chatbox form label #check {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+label .check {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 60%;
+}
+label .check-in {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}

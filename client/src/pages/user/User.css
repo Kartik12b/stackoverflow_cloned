@@ -1,0 +1,55 @@
+.user-list-header h1 {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.user-list-container {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+.user-profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #0e0c0c;
+}
+.user-profile-link:hover {
+  color: #3a3a3a;
+}
+.user-details .avatar-user,
+.avatar-user img {
+  height: 120px;
+  width: 120px;
+}
+.avatar {
+  padding: 7px 13px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  transition: 2ms;
+  margin-right: 10px;
+}
+.avatar:hover {
+  background-color: #bebebe;
+  color: #dbe2e7;
+}
+
+.profile-bio {
+  width: 99%;
+}
+.profile-bio-tags {
+  display: flex;
+  gap: 0.4rem;
+}
+.profile-bio-tags p {
+  padding: 0.2rem 0.6rem;
+  background-color: #7ac0ef;
+  border-radius: 0.4rem;
+  color: #ffff;
+}
+.profile-bio-tags p:hover {
+  cursor: pointer;
+}
+.profile-bio-about {
+  width: 100%;
+}

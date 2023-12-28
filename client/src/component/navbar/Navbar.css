@@ -1,0 +1,205 @@
+.nav {
+  min-height: 50px;
+  margin: 0 auto;
+  width: 100%;
+  border-top: solid 2px #ef8236;
+  box-shadow: 0 1px 5px #00000033;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  align-items: center;
+  background-color: #f8f9f8;
+}
+.avatar-id .avatar-navbar img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media (min-width: 320px) {
+  .navbar {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0.2rem;
+    align-content: center;
+    justify-content: end;
+    align-items: center;
+    justify-items: right;
+  }
+  .menu {
+    display: block;
+    border: none;
+    margin: 0.5rem;
+  }
+  .menu .nav-logout {
+    border: none;
+  }
+  .logout .nav-links,
+  .avatar-id {
+    display: none;
+  }
+  .navbar .search-icon-btn {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-logo {
+    padding: 0.2rem 1.2rem;
+  }
+  .nav-item {
+    margin: 0.2rem;
+    font-size: small;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+    transition: 0.2s;
+    overflow-wrap: initial;
+    white-space: nowrap;
+  }
+  .nav-links,
+  .nav-logout {
+    padding: 0.03rem 0.7rem;
+    border: solid 0.12rem #1d275e33;
+    border-radius: 0.3rem;
+    background-color: #e7f8fc;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .search-icon-btn {
+    display: inline-block;
+  }
+  .navbar form {
+    display: none;
+    flex-grow: 1;
+    padding: 0 12px;
+    position: relative;
+  }
+  .mobile-searchbar form {
+    display: block;
+    flex-grow: 1;
+    padding: 0 12px;
+    position: relative;
+  }
+  .navbar form #search,
+  .mobile-searchbar form #search {
+    min-width: 76%;
+    margin: 0;
+    padding: 8px 10px 8px 30px;
+    font-size: 13px;
+    border: solid 1px #2187ee33;
+    border-radius: 5px;
+  }
+  .navbar form #search:hover,
+  .mobile-searchbar form #search:hover {
+    border: solid 1px #1b19b233;
+  }
+  .navbar form .fa-magnifying-glass,
+  .mobile-searchbar form .fa-magnifying-glass {
+    position: absolute;
+    top: 9px;
+    left: 18px;
+  }
+  .mobile-searchbar form {
+    display: block;
+  }
+  .mobile-searchbar form #search {
+    min-width: 90%;
+    margin: 0.4rem;
+  }
+  .mobile-searchbar form .search-btn {
+    position: absolute;
+    top: 0.49rem;
+    right: 0.3rem;
+    border: none;
+    border-radius: 0.3rem;
+
+    padding: 0.5rem;
+    background-color: #0a95ff;
+    color: white;
+  }
+  .mobile-searchbar form .search-btn:hover {
+    background-color: #037ecb;
+  }
+  .mobile-searchbar form .fa-magnifying-glass {
+    top: 0.9rem;
+    left: 1.7rem;
+  }
+}
+@media (min-width: 780px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .logout {
+    display: grid;
+    width: calc(100% - 85% - 5%);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-right: 0.8rem;
+  }
+  .logout .nav-links,
+  .avatar-id {
+    display: block;
+    white-space: nowrap;
+  }
+  .navbar .nav-logo {
+    padding-left: 10%;
+  }
+  .nav-logout {
+    padding-right: 10%;
+  }
+  .menu {
+    display: none;
+    white-space: nowrap;
+  }
+  .nav-logout {
+    white-space: nowrap;
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 85%;
+  }
+  .nav-links {
+    padding: 0.03rem 0.7rem;
+    border: solid 0.12rem #1d275e33;
+    border-radius: 0.3rem;
+    background-color: #e7f8fc;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-btn {
+    cursor: pointer;
+    color: rgb(75, 75, 75);
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  .nav-btn:hover {
+    background-color: rgb(226, 226, 226);
+    color: rgb(121, 122, 123);
+  }
+  .navbar form {
+    display: block;
+  }
+
+  .search-icon-btn {
+    display: none;
+  }
+  .mobile-searchbar {
+    display: none;
+  }
+  .nav-links:hover {
+    background-color: #d3e4eb;
+  }
+}

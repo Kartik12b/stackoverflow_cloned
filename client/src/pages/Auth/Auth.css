@@ -1,0 +1,120 @@
+
+@media (min-width: 320px){
+   .auth-section{
+      margin:1.3rem auto;
+   }
+   .auth-container{
+      min-width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3.3rem 1.3rem;
+   }
+   .auth-container form{
+      max-width: 95%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      box-shadow: 1px 1px rgb(26, 25, 25), 0.08em 0 .1em rgb(16, 34, 101);
+   }
+}
+@media (min-width: 780px) {
+   .auth-section{
+      min-height: 100vh;
+      margin: 0 auto;
+      background-color: #f1f2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .auth-container{
+      min-width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 30px ;
+      padding: 20px;
+      align-items: center;
+   }
+   .auth-container form{
+      width: 100%;
+   }
+}
+
+.login-logo{
+   padding: 20px 30px;
+}
+.auth-container-1{
+   padding: 20px;
+   margin:10px 30px;
+}
+
+
+.auth-container form label input{
+   padding: 10px;
+   width: calc( 100% - 30px);
+   border: solid 0.3px #00003e;
+   border-radius: 5px;
+   font-size: 13px;
+}
+
+.auth-container form label:nth-child(1) h4,
+.auth-container form label:nth-child(2) h4,
+.auth-container form label:nth-child(3) ,
+.password-label h4 ~ span
+{
+   margin-bottom: 5px;
+   margin-top: 10px;
+}
+.auth-container form label:nth-child(4){
+   display: flex;
+}
+.auth-container form label:nth-child(4) input{
+   width: 15px;
+   margin-bottom: 28px;
+}
+.auth-container form label:nth-child(4) input~ span{
+   font-size: 13px;
+}
+.auth-btn{
+   margin-top: 10px;
+   padding: 10px 5px;
+   width: 100%;
+   background-color: #009dff;
+   border: solid 1px #009dff;
+   color: white;
+   border-radius: 5px;
+   font-weight: 600;
+   font-size: 15px;
+}
+.auth-btn:hover{
+   background-color: #018ce3;
+}
+.handle-switch-btn{
+   background-color: transparent;
+   color: #007ac6;
+   border: none;
+   font-size:13px;
+}
+.password-label{
+   display: flex;
+   justify-content: space-between;
+}
+.password-label h4 ~ span{
+   color: #007ac6;
+   text-decoration: none;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 12px;
+}
+.auth-btn~p{
+   font-size: 13px;
+}
+.auth-btn ~ p > span, .auth-container-1 > p ~ span{
+   color:#007ac6;
+   font-size: 13px;
+}

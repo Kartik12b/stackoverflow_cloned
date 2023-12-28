@@ -1,0 +1,62 @@
+.user-details-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.user-details {
+  display: flex;
+  align-items: flex-start;
+}
+.user-name {
+  padding-left: 20px;
+}
+.user-name p {
+  color: #7e7e7e;
+}
+.edit-profile-btn {
+  padding: 8px 10px;
+  border: solid 1px #7e7e7e;
+  border-radius: 2px;
+  background-color: white;
+  transition: 0.3ms;
+}
+.edit-profile-container {
+  width: 99%;
+}
+.edit-profile-title {
+  display: flex;
+  font-weight: 800;
+  justify-content: center;
+}
+.edit-profile-container form {
+  width: calc(100% - 1px);
+  margin: 0.4rem;
+}
+.edit-profile-container form input,
+textarea {
+  width: calc(100% - 2.7% - 0.4rem);
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  outline-width: 0.01rem;
+}
+.user-submit-btn {
+  padding: 12px 10px;
+  color: black;
+  border: none;
+  border-radius: 2px;
+}
+
+.user-submit-btn:hover {
+  background-color: #0074cc74;
+}
+.user-cancel-btn {
+  padding: 14px 10px;
+  color: #0a95ff;
+  background-color: transparent;
+  border: none;
+}
+.user-cancel-btn:hover {
+  background-color: white;
+}

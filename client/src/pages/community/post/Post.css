@@ -1,0 +1,163 @@
+:root {
+  --violet-shadow: 0.1rem 0.1rem 0.4rem 0.012rem hsla(271, 70%, 70%, 0.5);
+  --blashis-violet-shadow: 0.1rem 0.1rem 0.4rem 0.012rem hsla(230, 3%, 63%, 0.5);
+}
+.ps-container {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0;
+}
+.ps-c-header {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1.2rem 0 0 0;
+  padding: 0.9rem;
+
+  /* border: solid 0.012rem rgb(93, 88, 88); */
+  border-radius: 0.1rem;
+
+  /* z-index: 66; */
+  box-sizing: content-box;
+  box-shadow: var(--blashis-violet-shadow);
+}
+.post-header {
+  display: grid;
+  min-width: 100%;
+}
+.post-header .post-details {
+  display: flex;
+}
+.post-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.post-by .av {
+  width: 1.4rem;
+}
+.post-caption {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.ellipsis {
+  border: none;
+  background-color: transparent;
+}
+.text-post {
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.post-body {
+  margin-top: 0.6rem;
+  width: 100%;
+}
+.post-body img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.post-interactions {
+  margin: 0.16rem 0.16rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.like span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 0.22rem;
+  border-radius: 0.3rem;
+  box-shadow: var(--violet-shadow);
+}
+.like span:hover {
+  cursor: pointer;
+}
+.share {
+  width: 100%;
+  min-height: 170px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareInput {
+  border: none;
+  width: 80%;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+.shareHr {
+  margin: 20px;
+}
+.shareImgContainer {
+  width: 100%;
+}
+.shareImgContainer img {
+  width: inherit;
+}
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+  margin-left: 20px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.shareButton {
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
